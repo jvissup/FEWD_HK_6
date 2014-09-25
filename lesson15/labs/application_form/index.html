@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+	
+		<title>Application Form</title>
+		
+		<!-- external CSS link -->
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
+		
+		<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+	</head>
+	<body>
+		<div id="container">
+			<form action="/app" method="POST">
+				<header>
+					<h1>Course Application</h1>
+				</header>
+
+				<h2>Your Contact Info</h2>
+			
+				<div class="control-group">
+					<label for="firstname">First Name</label>
+					<input type="text" name="firstname" placeholder="First Name">
+				</div>
+			
+				<div class="control-group">
+					<label for="lastname">Last Name</label>
+					<input type="text" name="lastname">
+				</div>
+
+				<div class="control-group">
+					<label for="gender">Gender</label>
+					<label>Male <input type="radio" name="gender" value="m"></label>
+					<label>Female <input type="radio" name="gender" value="f"></label>
+				</div>
+			
+				<div class="control-group">
+					<label for="phone">Phone</label>
+					<input type="tel" name="phone">
+				</div>
+
+				<div class="control-group">
+					<label>Address</label>
+					<input type="text" name="address1" placeholder="Address Line 1">
+					<input type="text" name="address2" placeholder="Address Line 2">
+					<input type="text" name="district" placeholder="District">
+					<input type="text" name="region" placeholder="Region">
+					<input type="text" name="city" disabled value="Hong Kong" placeholder="City">
+				</div>
+
+				<h2>Skills and Interests</h2>
+			
+				<div class="control-group">
+					<label for="course">Course</label>
+					<select name="course">
+						<option value="1">WDI</option>
+						<option value="2" selected>FEWD</option>
+						<option value="3">BEWD</option>
+					</select>
+				</div>
+
+				<div class="control-group">
+					<label for="past-experience">Past Experience</label>
+					<textarea rows="5" cols="80"></textarea>
+				</div>
+
+				<div class="control-group">
+					<label for="can-paid">Can you paid tuition?</label>
+					<input type="checkbox" name="can-paid" >
+				</div>			
+
+				<footer>
+					<input type="reset" value="Reset">
+					<input type="button" value="Save Draft">
+					<button>Submit</button>
+				</footer>
+			</form>
+		</div><!-- #container --> 
+	</body>
+</html>

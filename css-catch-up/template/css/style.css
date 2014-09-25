@@ -1,0 +1,162 @@
+/*
+Project Name: Blank Template
+Client: Your Client
+Author: Your Name
+Developer @GA in NYC
+*/
+
+
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Border-box */
+* {
+	-moz-box-sizing: border-box; /* Firexfox */
+	-webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+	box-sizing: border-box; /* IE */
+}
+
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.cf:before,
+.cf:after {
+	content: " "; /* 1 */
+	display: table; /* 2 */
+}
+
+.cf:after {
+	clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+	*zoom: 1;
+}
+
+/******************************************
+/* BASE STYLE
+/*******************************************/
+
+html, body {
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	color: #000;
+	font-size: 12px;
+	line-height: 1.4;
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+a {
+	text-decoration: none;
+	font-family: Times;
+	font-size: 14px;
+}
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+/* Center the container */
+.container {
+	width: 1024px;
+	margin: auto;
+	height: 100%;
+	position: relative;
+}
+
+nav {
+	width: 100%;
+	margin: auto;
+	overflow: auto;
+	text-align: center;
+	line-height: 62px;
+}
+
+nav ul {
+	overflow: auto;
+	display: inline-block;
+	border-bottom: 1px dotted black;
+	width: 429px;
+}
+
+nav li {
+	float: left;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+nav li a {
+	text-transform: uppercase;
+}
+
+nav #logo {
+	width: 58px;
+	height: 58px;
+	background: url(http://roguesocietygin.com/img/icons-s4f84f005e9.png);
+	background-position: 0px -173px;
+	display: inline-block;
+}
+
+#image-box {
+	position: relative;
+	height: 1000px;
+}
+
+#image-box .top-left {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+#image-box .top-right {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+#image-box .bottom-right {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+
+#image-box .bottom-left {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+
+#image-box .center {
+	margin: auto;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	display: block;
+}
+
+header {
+
+}
+
+footer {
+
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
